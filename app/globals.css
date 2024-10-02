@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.custom-progress-bar{
+  width: 100%;
+  height: 4px;
+}
+.custom-progress-bar::-webkit-progress-bar {
+  background-color: #f3f4f63b; 
+}
+
+.custom-progress-bar::-webkit-progress-value {
+  background-color: #ffffff; 
+  transition: width 0.3s ease-in-out;
+}
+
+.custom-progress-bar::-moz-progress-bar {
+  background-color: #ffffff;
+}
+

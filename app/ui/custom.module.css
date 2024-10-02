@@ -1,0 +1,83 @@
+.overlay{
+    background: #ffdb67e8;
+}
+.circle{
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, rgb(255, 244, 219), rgb(255, 221, 0));
+    color: black;
+    font-weight: 700;
+}
+.absoluteOverlay{
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff24;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.svgLogos{
+    width:50px;
+}
+.waves{
+    transition-duration: 300ms;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.wavesBottom{
+    transition-duration: 300ms;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.wavesTopSpan{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    border-top: 1px solid #ffffff;
+}
+.wavesBottomSpan{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    border-top: none;
+    border-bottom: 1px solid #ffffff;
+}
+@keyframes btnWavesSmTop {
+    from {
+        transform: translateY(0);
+        opacity: 1
+    }
+
+    to {
+        transform: translateY(-1rem);
+        opacity: 0
+    }
+}
+
+@keyframes btnWavesSmBottom {
+    from {
+        transform: translateY(0);
+        opacity: 1
+    }
+
+    to {
+        transform: translateY(1rem);
+        opacity: 0
+    }
+}
